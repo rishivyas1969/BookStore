@@ -5,7 +5,8 @@ window = Tk()
 window.configure(bg='black')
 window.wm_title("BookStore")
 
-
+p1 = PhotoImage(file = './icon/icon.png')
+window.iconphoto(False, p1)
 
 
 def view_command():
