@@ -36,8 +36,8 @@ def update_command():
     backend.update(row[0],
     title_text.get() if title_text.get() else row[1],
     author_text.get() if author_text.get() else row[2],
-    year_text.get() if year_text.get() else row[2],
-    isbn_text.get() if isbn_text.get() else row[3])
+    year_text.get() if year_text.get() else row[3],
+    isbn_text.get() if isbn_text.get() else row[4])
     lb.delete(0,END)
     for row in backend.view():
         lb.insert(END, row)
